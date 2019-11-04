@@ -4,7 +4,18 @@ mat-toolbar{
     height:auto;
     background-color: #ffffff;
     position: sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .sticky + .content {
+    padding-top:60%;
+  }
 .logo{
     width:18%;
 }
@@ -24,6 +35,7 @@ mat-toolbar{
 /*FOOTER*/
 #facebook{
     width:4%;
+    margin-left:55%;
 }
 .footer{
 
@@ -56,9 +68,11 @@ ul {
     text-align: center;
     height:auto;
     position: absolute;
+    
 
 }
 h3{
+    color:#ffffff;
     font-size: 1.1vw;
 }
 .totalbottom{
@@ -76,4 +90,5 @@ h3{
 }
 .fbheader{
     margin-bottom:1%;
+    margin-left:55%;
 }
