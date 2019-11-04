@@ -1,0 +1,53 @@
+<mat-toolbar>
+  <img src=".\assets\logo.png" class = "logo">
+  <span class="spacer"></span>
+  <a class = "link" routerLink="/home" routerLinkActive="active">Начало</a>
+  <a class = "link" routerLink="/services" routerLinkActive="active">Услуги</a>
+  <a class = "link" routerLink="/aboutus" routerLinkActive="active">За Нас</a>
+  <a class = "link" routerLink="/contact" routerLinkActive="active">Контакт</a>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
+
+<mat-toolbar class = "footer">
+  <div class = "botsections">
+    <h3>Услуги</h3>
+    <ul>
+      <li>
+          <p><a class = "menu" routerLink="/home" [fragment]="''" routerLinkActive="active">Услига1</a></p>
+      </li>
+      <li>
+          <p><a class = "menu" routerLink="/home" [fragment]="''" routerLinkActive="active">Услига2</a></p>
+      </li>
+      <li>
+          <p><a class = "menu" routerLink="/home" [fragment]="''" routerLinkActive="active">Услига3</a></p>
+      </li>
+    </ul>
+  </div>
+  <div class = "botsections">
+        <h3>Контакт</h3>
+    <ul>
+      <li>
+        <p>Адрес: Кей Пи Ай Консулт ЕООД  ул. "Примерна 7" гр. София</p>
+      </li>
+      <li>
+          <p>Телефон: 0899844940</p>
+      </li>
+      <li>
+          <p>Мейл: k.p.i.consult@abv.bg</p>
+      </li>
+    </ul>
+  </div>
+  <div class = "botsections third">
+      <h3 class="fbheader">Последвайте ни </h3>
+      <a href=""><img src = ".\assets\facebook.png" id="facebook"></a>
+
+  </div>
+  <div class = "totalbottom">
+      <p class="supersmall company">Кей Пи Ай Консулт ЕООД 2019</p>
+      <p  class="supersmall Ours">Уебсайтове & Мобилни Aпликации от YMD Solutions</p>
+  </div>
+</mat-toolbar>
+<div>
+
+</div>

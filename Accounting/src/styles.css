@@ -1,0 +1,13 @@
+
+
+.animated {
+    visibility: visible !important;
+}
+.hide-on-init {
+    visibility: hidden;
+}
+html {
+    scroll-behavior: smooth;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;background-color:#ffffff}

@@ -1,0 +1,78 @@
+/*NAVBAR*/
+mat-toolbar{
+    width:100%;
+    height:auto;
+    background-color: #ffffff;
+    position: sticky;
+}
+.logo{
+    width:18%;
+}
+.link{
+    margin-right:2%;
+    color:#434a4d;
+    font-size: 1.3vw;
+    text-decoration: none;
+}
+.spacer{
+    flex:1 1 auto;
+}
+
+
+
+
+/*FOOTER*/
+#facebook{
+    width:4%;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:#0c2461;
+    display: inline-table;
+    
+}
+.botsections{
+    display: inline-block;
+    margin-left:5%;
+    margin-top:2%;
+}
+p{
+    color:#ffffff;
+    font-size:0.8vw;
+}
+.menu{
+    color:#ffffff;
+    font-size:0.8vw;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+.third{
+    width:70%;
+    position:fixed;
+    text-align: center;
+}
+h3{
+    font-size: 1.1vw;
+}
+.totalbottom{
+    width:100%;
+    text-align: center;
+}
+.supersmall{
+    font-size: 0.7vw;
+}
+.company{
+    margin-top:3%;
+}
+.Ours{
+    margin-top:-1%;
+}
+.fbheader{
+    margin-bottom:1%;
+}
