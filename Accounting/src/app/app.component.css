@@ -26,8 +26,7 @@ mat-toolbar{
     width:4%;
 }
 .footer{
-    position: fixed;
-    bottom: 0;
+
     width: 100%;
     background-color:#0c2461;
     display: inline-table;
@@ -53,9 +52,11 @@ ul {
     padding: 0;
   }
 .third{
-    width:70%;
-    position:fixed;
+    width:50%;
     text-align: center;
+    height:auto;
+    position: absolute;
+
 }
 h3{
     font-size: 1.1vw;
