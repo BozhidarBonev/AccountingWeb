@@ -5,19 +5,21 @@
     padding-left: 0;
     padding-right: 0;
     padding-top:0;
-    height:auto;
+    padding-bottom:0;
     top: 0;
+    bottom: 0;
+    height:auto;
 }
 .carousel{
     width:100%;
+    height:auto;
     
 }
 video{
     width: 100%;
-    height: auto;
+    height: 100%;
     position: relative;
     filter: brightness(0.7);
-    border-width: 1px;
     
 }
 #toobright{
@@ -53,27 +55,24 @@ h3{
 .item.active{
     position: relative;
     z-index: 0;
+    height:auto;
 }
-.left{
-
-}
-
 
 
 
 /*ICON-LINE*/
 
 .iconText{
-    color:#0c2461;
-    font-size: 0.95vw;
+    color:#ffffff;
+    font-size: 1.1vw;
     font-weight: bold;
 }
 .underCar{
+    margin-top:-0.3%;
     width:100%;
     height:auto;
     display:flex;
-    border-bottom:2px solid #0c2461;
-    
+    background-color: #0c2461;
 }
 .onethird{
     margin-top:0.5%;
@@ -82,18 +81,18 @@ h3{
     text-align: center;
 }
 fa-icon{
-    font-size: 4vw;
-    color:#0c2461;
+    font-size: 3.5vw;
+    color:#ffffff;
 }
 .inline{
     width:100%;
     text-align: center;
 }
 .Fline{
-    border-right: 2px solid #0c2461;
+    border-right: 2px solid #ffffff;
 }
 .SLine{
-    border-right: 2px solid #0c2461;
+    border-right: 2px solid #ffffff;
 }
 
 
@@ -215,7 +214,7 @@ fa-icon{
 
 .miniaboutus{
     display: flex;
-    background-color: #ECE9E6;
+    background-color: #f5f3f2;
 }
 .aboutdivs{
     flex-basis: 50%;
