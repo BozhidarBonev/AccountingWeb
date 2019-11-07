@@ -1,1 +1,58 @@
-<p>contact works!</p>
+<div class="containerr">
+
+<div class = "contactline">
+    <h1 class="contactlinetext">Контакт</h1>
+</div>
+<div class="miniaboutus">
+    <div class="aboutdivs hide-on-init animated-delay-1"  animateOnScroll animationName="animated fadeInUp">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="812" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=rachesmolen&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <a href="https://www.bitgeeks.net/divi-discount-elegant-themes-coupon/">wordpress promo code plugin</a>
+                </div>
+                <style>.mapouter{position:relative;text-align:right;height:500px;width:812px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:812px;}</style>
+            </div>
+        </div>
+        <div class="aboutdivs hide-on-init animated-delay-1"  animateOnScroll animationName="animated fadeInDown">
+          <ul>
+                <p>Адрес</p>
+                <p>Кей Пи Ай Консулт ЕООД ул. "Примерна 7" гр. София</p>
+                <p>Телефон<p>
+                <p>0899844940</p>
+                <p>Мейл</p>
+                <p>k.p.i.consult@abv.bg</p>
+                <p>Работно Време</p>
+                <p>Понеделник - Петък 00:08-00:16</p>
+                <p>Събота - Неделя 00:08-00:16</p>
+        </ul>
+        </div>
+    </div>
+    <div class="divv1">
+        <h1>Свържете се с нас сега</h1>
+    </div>
+    <div class="divvv">
+        
+        <div class="example-container">
+            <mat-form-field>
+              <input matInput placeholder="Име">
+            </mat-form-field>
+            <mat-form-field>
+                    <input matInput placeholder="Телефон">
+            </mat-form-field>
+            
+             <mat-form-field>
+                <input matInput placeholder="Enter your email" [formControl]="email" required>
+                 <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+                  
+            <mat-form-field>
+              <textarea matInput placeholder="Съобщение"></textarea>
+            </mat-form-field>
+             
+        </div>
+    
+    </div>
+        <button class="button4">Изпрати</button>  
+        
+</div> 
+      
