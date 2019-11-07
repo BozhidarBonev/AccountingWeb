@@ -15,7 +15,7 @@
     </script>
 
 <mat-toolbar id="navbar">
-  <img src=".\assets\logo.png" class = "logo">
+  <a class = "link" routerLink="/home" routerLinkActive="active"><img src=".\assets\logo.png" class = "logo"></a>
   <span class="spacer"></span>
   <a class = "link" routerLink="/home" routerLinkActive="active">Начало</a>
   <a class = "link" routerLink="/services" routerLinkActive="active">Услуги</a>
@@ -39,13 +39,13 @@
     <h3>Услуги</h3>
     <ul>
       <li>
-          <p><a class = "menu" routerLink="/home" [fragment]="''" routerLinkActive="active">Услига1</a></p>
+          <p><a class = "menu" routerLink="/home" [fragment]="''" routerLinkActive="active">Услуга 1</a></p>
       </li>
       <li>
-          <p><a class = "menu" routerLink="/home" [fragment]="''" routerLinkActive="active">Услига2</a></p>
+          <p><a class = "menu" routerLink="/home" [fragment]="''" routerLinkActive="active">Услуга 2</a></p>
       </li>
       <li>
-          <p><a class = "menu" routerLink="/home" [fragment]="''" routerLinkActive="active">Услига3</a></p>
+          <p><a class = "menu" routerLink="/home" [fragment]="''" routerLinkActive="active">Услуга 3</a></p>
       </li>
     </ul>
   </div>
@@ -63,6 +63,20 @@
       </li>
     </ul>
   </div>
+  <div class = "botsections">
+    <h3>Полезни Страници</h3>
+<ul>
+  <li>
+    <p><a class = "menu" href="">Страница 1</a></p>
+  </li>
+  <li>
+    <p><a class = "menu" href="">Страница 2</a></p>
+  </li>
+  <li>
+    <p><a class = "menu" href="">Страница 3</a></p>
+  </li>
+</ul>
+</div>
   <div class = "botsections third">
       <h3 class="fbheader">Последвайте ни </h3>
       <a href=""><img src = ".\assets\facebook.png" id="facebook"></a>
@@ -70,7 +84,7 @@
   </div>
   <div class = "totalbottom">
       <p class="supersmall company">Кей Пи Ай Консулт ЕООД 2019</p>
-      <p  class="supersmall Ours">Уебсайтове & Мобилни Aпликации от YMD Solutions</p>
+      <p  class="supersmall Ours"><a class = "ymdlink" href="">Уебсайтове & Мобилни Aпликации от YMD Solutions</a></p>
   </div>
 </mat-toolbar>
 <div>

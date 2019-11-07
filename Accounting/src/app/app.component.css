@@ -17,7 +17,7 @@ mat-toolbar{
     padding-top:60%;
   }
 .logo{
-    width:18%;
+    width:25%;
     margin-top:1%;
 }
 .link{
@@ -36,7 +36,7 @@ mat-toolbar{
 /*FOOTER*/
 #facebook{
     width:4%;
-    margin-left:55%;
+    margin-left:35%;
 }
 .footer{
 
@@ -91,9 +91,12 @@ h3{
 }
 .fbheader{
     margin-bottom:1%;
-    margin-left:55%;
+    margin-left:35%;
 }
-
+.ymdlink{
+    text-decoration: none;
+    color:white;
+}
 
 
 
