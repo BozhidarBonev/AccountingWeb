@@ -4,9 +4,28 @@
     color:#ffffff;
     padding-bottom:2%;
     padding-top:2%;
-    
-    
-    
+    font-weight: bold;
+}
+.h11{
+    font-size:1.9vw;
+    text-align:center;
+    color:#0c2461;
+    padding-bottom:2%;
+    padding-top:2%;
+    font-weight: bold;
+
+}
+.h33{
+    font-size:1.4vw;
+    text-align:center;
+    color:#0c2461;
+    font-weight: bold;
+}
+p{
+    color:#0c2461;
+    font-size: 1.3vw;
+
+
 }
 .contactline{
     
@@ -14,6 +33,7 @@
     width:100%;
     height:auto;
     margin-top:-1%;
+    margin-bottom: -1%;
     
     
 }
@@ -24,28 +44,23 @@
    text-align: center;
    margin-top:5%;
   margin-bottom: 3%;
+  
    
     
 }
 .divvv{
-    
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      
-    
+    margin: auto;
+  width: 40%;
+  
+  padding: 10px;
 }
-
 .example-container {
     display: flex;
     flex-direction: column;
-    
-   }
+}
   
   .example-container > * {
-    width: 30%;
+    width: 100%;
   }
   .miniaboutus{
     
@@ -74,14 +89,13 @@ button {
 }
   
 .button4 {
-    width:8%;
+    width:100%;
     background-color: white;
     color: black;
     border: 2px solid #e7e7e7;
     text-align: center;
-    position:relative;
-    top:50%; 
-    left:50%;
+    
+    
   }
   
   .button4:hover {
@@ -94,3 +108,16 @@ button {
     padding:5%;
 }
   
+.div21{
+    margin: auto;
+    width: 10%;
+    padding: 10px;  
+    margin-top:2%;
+    margin-bottom: 2%;
+}
+hr{
+    margin-left:2%;
+    margin-right: 2%;
+    height:3px;
+    background-color: #0c2461;
+}
