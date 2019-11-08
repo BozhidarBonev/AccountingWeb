@@ -24,6 +24,7 @@
 p{
     color:#0c2461;
     font-size: 1.3vw;
+    
 
 
 }
@@ -120,4 +121,12 @@ hr{
     margin-right: 2%;
     height:3px;
     background-color: #0c2461;
+}
+.div31{
+    margin-right:2%;
+}
+.div44{
+    margin-left:6%;
+    margin-bottom: 3%;
+    margin-top:-2%
 }
