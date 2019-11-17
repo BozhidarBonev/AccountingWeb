@@ -24,19 +24,19 @@
 p{
     color:#0c2461;
     font-size: 1.3vw;
-    
+
 
 
 }
 .contactline{
-    
+
     background-color:#0c2461 ;
     width:100%;
     height:auto;
     margin-top:-1%;
     margin-bottom: -1%;
-    
-    
+
+
 }
 
 .divv1{
@@ -45,26 +45,26 @@ p{
    text-align: center;
    margin-top:5%;
   margin-bottom: 3%;
-  
-   
-    
+
+
+
 }
 .divvv{
     margin: auto;
-  width: 40%;
-  
+    width: 30%;
+
   padding: 10px;
 }
 .example-container {
     display: flex;
     flex-direction: column;
 }
-  
+
   .example-container > * {
     width: 100%;
   }
   .miniaboutus{
-    
+
     display: flex;
     background-color: #f5f3f2;
 }
@@ -72,47 +72,33 @@ p{
     flex-basis: 50%;
 }
 
-
-
-button {
-    background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 32px;
+.text{
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
 }
-  
-.button4 {
-    width:100%;
-    background-color: white;
-    color: black;
-    border: 2px solid #e7e7e7;
-    text-align: center;
-    
-    
-  }
-  
-  .button4:hover {
-      background-color: #e7e7e7;
-    }
+.button1 {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1.5% ;
+  padding-top: 1.5% ;
+  padding-left: 3% ;
+  padding-right: 3% ;
+  background: #0c2461;
+  color:#ffffff;
+  border-radius: 12px;
+}
+
 
   ul{
     margin:5%;
     top:5%;
     padding:5%;
 }
-  
+
 .div21{
     margin: auto;
     width: 10%;
-    padding: 10px;  
+    padding: 10px;
     margin-top:2%;
     margin-bottom: 2%;
 }
@@ -129,4 +115,14 @@ hr{
     margin-left:6%;
     margin-bottom: 3%;
     margin-top:-2%
+}
+
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+.example-full-width {
+  width: 100%;
 }
