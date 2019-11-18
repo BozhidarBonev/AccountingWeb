@@ -21,11 +21,11 @@ export class ContactComponent implements OnInit {
   faPhoneSquare = faPhoneSquare;
   submitted = false;
   errorMsg = '';
-  showMsg=false;
+  showMsg = false;
 
   email = new FormControl('', [Validators.required, Validators.email]);
   name = new FormControl('', [Validators.required]);
-userModel = new User('' , '' , '' , '')
+userModel = new User('' , '' , '' , '' );
 
   getErrorMessage() {
     return this.email.hasError('required') ? 'You must enter a value' :
@@ -36,14 +36,14 @@ userModel = new User('' , '' , '' , '')
 
   ngOnInit() {
   }
-  onSubmit(){
+  onSubmit() {
 
     this._enrollementService.enroll(this.userModel)
     .subscribe(
       data => console.log('Succes', data),
       error => console.error('Error!', error)
-    )
-    this.showMsg= true;
+    );
+    this.showMsg = true;
     console.log(this.signupForm.value);
     this.signupForm.resetForm();
 
