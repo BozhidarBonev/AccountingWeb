@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AccountingServicesComponent } from './accounting-services/accounting-services.component';
 /*ANGULAR-MARTERIAL*/
 import {MatToolbarModule} from '@angular/material/toolbar';
-import{MatCardModule} from '@angular/material';
+import {MatCardModule} from '@angular/material';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material';
@@ -19,8 +19,8 @@ import {MatSliderModule} from '@angular/material/slider';
 /*ADDITIONAL*/
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ReactiveFormsModule } from '@angular/forms';
-import{BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { HttpClientModule }    from '@angular/common/http';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 
