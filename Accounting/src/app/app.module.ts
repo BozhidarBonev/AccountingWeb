@@ -13,6 +13,9 @@ import{MatCardModule} from '@angular/material';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSliderModule} from '@angular/material/slider';
 /*ADDITIONAL*/
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -43,7 +46,10 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     AppRoutingModule,
     MatFormFieldModule,
     FormsModule,
-    MatInputModule
+    MatInputModule,
+    MatDatepickerModule,
+    MatCheckboxModule,
+    MatSliderModule
     
   ],
   providers: [],

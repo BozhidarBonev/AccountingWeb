@@ -1,5 +1,5 @@
 /*first line*/
-.iconText{
+.headerText{
     padding-top: 2%;
     padding-bottom: 2%;
     color:#ffffff;
@@ -25,16 +25,13 @@
 }
 
 /*concrete services*/
-
-
 #ServTitle{
     text-align: center;
     font-size: 1.9vw;
     margin-top:5%;
     color:#0c2461;
 }
-
-.miniaboutus{
+.concreteservice{
     display: flex;
     margin-top: 5.5%;
 }
@@ -55,14 +52,14 @@ img{
     border-radius: 8px;
     transition: all 2s ease-in-out;
 }
-.aboutheader{
+.servheader{
     margin-top:5%;
     text-align: center;
     font-size:2.2vw;
     margin-bottom: 5%;
     color:#434a4d;
 }
-.abouttext{
+.servicetext{
     text-align: center;
     font-size: 1.1vw;
     margin-left:5%;
@@ -95,18 +92,17 @@ img{
     margin-left:70%;
     display: inline-block;
     border-radius: 4px;
-  background-color: #ffffff;
-  border: none;
-  color: #0c2461;
-  text-align: center;
-  font-size: 1vw;
+    background-color: #ffffff;
+    border: none;
+    color: #0c2461;
+    text-align: center;
+    font-size: 1vw;
     width:7%;
-  transition: all 0.5s;
-  cursor: pointer;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
 /* pole za danuci */
-
 .example-container{
     width:65%;
     margin-left: 10%;
@@ -120,6 +116,7 @@ img{
         display: flex;
         margin-top: 3%;
         margin-bottom:3%;
+        background-image: url('/src/assets/calculator.jpg');
 }
 .calculatorheader{
     margin-top:2%;
@@ -131,8 +128,94 @@ img{
 .last{
     margin-bottom: 4%;
 }
-/* uslugi */
 
+/* uslugi */
 .quality1{
     flex: 33%;
+}
+.example-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+  }
+  
+  .example-form > * {
+    width: 50%;
+  }
+  .calculatorformheader{
+    margin-top:2%;
+    text-align: center;
+    font-size:2.2vw;
+    margin-bottom: 10%;
+    color:#434a4d;
+    font-size: 1.6vw;
+}
+.calBtn{
+    width:100%;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    text-align: center;
+}
+.cb{
+    margin-bottom: 5%;
+}
+
+/* count on us */
+.ServicesHome{
+    width:100%;
+    height: 70%;
+}
+.datesdiv{
+    display:flex;
+    height: 100%;
+    width:100%;
+}
+.card{
+    height: auto;
+    width:100%;
+    margin-top:2%;
+}
+#ServTitle{
+    text-align: center;
+    font-size: 2.2vw;
+    margin-top:3%;
+    color:#0c2461;
+}
+.servhead{
+    text-align: center;
+    font-size: 1.7vw;
+    margin-top:1%;
+    color:#0c2461;
+}
+.servtext{
+    margin-top:7%;
+    margin-left:7%;
+    margin-right:7%;
+    font-size:1vw;
+}
+.borderDates{
+    margin-top:-0.3%;
+    width:100%;
+    height:auto;
+    background-color: #0c2461;
+    margin-top:-1%;
+}
+.datesimg{
+    margin-left: 30%;
+    margin-top: 5%;
+}
+.datesinfo{
+    text-align: center;
+    font-size: 1vw;
+    margin-top:1%;
+    color: black;
+    flex-direction: column;
+    width: 30%; 
+    margin-left: 35%;
+    height: auto;
+}
+.info{
+    width: 100%; 
+    height: auto;
 }
