@@ -1,10 +1,10 @@
 
 <script>
     window.onscroll = function() {myFunction()};
-    
+
     var navbar = document.getElementById("navbar");
     var sticky = navbar.offsetTop;
-    
+
     function myFunction() {
       if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
@@ -13,14 +13,22 @@
       }
     }
     </script>
+<a class = "link" routerLink="/home" routerLinkActive="active"><img src=".\assets\logo.png" class = "logo1"></a>
+<label  for="toggle">
+    <mat-icon>menu</mat-icon>
+  </label>
+  <input type="checkbox" class="hidden" id="toggle">
 
-<mat-toolbar id="navbar">
+<mat-toolbar  id="navbar">
   <a class = "link" routerLink="/home" routerLinkActive="active"><img src=".\assets\logo.png" class = "logo"></a>
   <span class="spacer"></span>
-  <a class = "link" routerLink="/home" routerLinkActive="active">Начало</a>
-  <a class = "link" routerLink="/services" routerLinkActive="active">Услуги</a>
-  <a class = "link" routerLink="/aboutus" routerLinkActive="active">За Нас</a>
-  <a class = "link" routerLink="/contact" routerLinkActive="active">Контакт</a>
+
+  <a class = "link " routerLink="/home" routerLinkActive="active">Начало</a>
+  <a class = "link " routerLink="/services" routerLinkActive="active">Услуги</a>
+  <a class = "link " routerLink="/aboutus" routerLinkActive="active">За Нас</a>
+  <a class = "link  " routerLink="/contact" routerLinkActive="active">Контакт</a>
+
+
 </mat-toolbar>
 
 
@@ -32,28 +40,32 @@
 
 
 
-<router-outlet></router-outlet>
 
+
+<router-outlet></router-outlet>
+<div>
 <mat-toolbar class = "footer">
-  <div class = "botsections">
+  <div class = "botsections first" id="first">
     <h3>Услуги</h3>
     <ul>
       <li>
-          <p><a class = "menu" routerLink="/home" [fragment]="''" routerLinkActive="active">Услуга 1</a></p>
+          <p><a class = "menu" routerLink="/services" [fragment]="''" routerLinkActive="active">Счетоводни услуги</a></p>
       </li>
       <li>
-          <p><a class = "menu" routerLink="/home" [fragment]="''" routerLinkActive="active">Услуга 2</a></p>
+          <p><a class = "menu" routerLink="/services" [fragment]="''" routerLinkActive="active">Данъчни Услуги</a></p>
       </li>
       <li>
-          <p><a class = "menu" routerLink="/home" [fragment]="''" routerLinkActive="active">Услуга 3</a></p>
+          <p><a class = "menu" routerLink="/services" [fragment]="''" routerLinkActive="active">Администратиране на задължения</a></p>
       </li>
     </ul>
   </div>
-  <div class = "botsections">
+  <div class="horl"><hr></div>
+  <div class = "botsections" id="second">
         <h3>Контакт</h3>
     <ul>
       <li>
-        <p>Адрес: Кей Пи Ай Консулт ЕООД  ул. "Примерна 7" гр. София</p>
+        <p>Адрес: ул. "Примерна 7" гр. София </p>
+
       </li>
       <li>
           <p>Телефон: 0899844940</p>
@@ -63,7 +75,9 @@
       </li>
     </ul>
   </div>
-  <div class = "botsections">
+  <div class="horl"><hr></div>
+
+  <div class = "botsections" id="third">
     <h3>Полезни Страници</h3>
 <ul>
   <li>
@@ -77,16 +91,21 @@
   </li>
 </ul>
 </div>
-  <div class = "botsections third">
+  <div class = "botsections third" id="fifth">
       <h3 class="fbheader">Последвайте ни </h3>
       <a href=""><img src = ".\assets\facebook.png" id="facebook"></a>
 
   </div>
-  <div class = "totalbottom">
+  <div class = "botsections lqlq" id="fifth">
+      <h3 class="fbheader">Последвайте ни </h3>
+      <a href=""><img src = ".\assets\facebook.png" id="facebook"></a>
+
+  </div>
+  <div class = "totalbottom" id="fourth">
       <p class="supersmall company">Кей Пи Ай Консулт ЕООД 2019</p>
       <p  class="supersmall Ours"><a class = "ymdlink" href="">Уебсайтове & Мобилни Aпликации от YMD Solutions</a></p>
   </div>
 </mat-toolbar>
 <div>
-
+  </div>
 </div>

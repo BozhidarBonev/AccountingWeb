@@ -1,123 +1,103 @@
 <div class="border">
   <div class="onehalf">
     <div class="inline">
-      <h1 class="headerText">Счетоводни услуги</h1>
+      <h1 class="headerText">Услуги</h1>
     </div>
   </div>
 </div>
-<h1 id="ServTitle" class="hide-on-init animated-delay-1" animateOnScroll animationName="animated fadeInLeft">Видове
+  <h1 id="ServTitle" class="hide-on-init animated-delay-1" animateOnScroll animationName="animated fadeInLeft">Видове
   услуги, които предлагаме</h1>
-<div class="concreteservice">
-  <div class="aboutdivs hide-on-init animated-delay-1" animateOnScroll animationName="animated fadeInLeft">
-    <img class="servpic" src=".\assets\service2.jpg">
-  </div>
-  <div class="aboutdivs hide-on-init animated-delay-1" animateOnScroll animationName="animated fadeInRight">
-    <h1 class="servheader"> Услуга 1</h1>
-    <p class="servicetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-      sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.</p>
-  </div>
-</div>
-
-<div class="concreteservice">
-  <div class="aboutdivs hide-on-init animated-delay-1" animateOnScroll animationName="animated fadeInLeft">
-    <h1 class="servheader">Услуга 2</h1>
-    <p class="servicetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-      sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.</p>
-  </div>
-  <div class="aboutdivs hide-on-init animated-delay-1" animateOnScroll animationName="animated fadeInLeft">
-    <img class="servpic" src=".\assets\service1.jpg">
-  </div>
-</div>
-
-<div class="contactline ">
-  <p class="contactlinetext">Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur ipsum</p>
-  <a class="link" routerLink="/contact" routerLinkActive="active"><button class="contactlinebutton">Контакт</button></a>
-</div>
-
-<div class="calculator">
-  <div class="aboutdivs hide-on-init animated-delay-1" animateOnScroll animationName="animated fadeInRight">
-    <h1 class="calculatorheader">Изчисление на данъци</h1>
-    <p class="servicetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-      sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.</p>
-  </div>
-  <div class="aboutdivs last hide-on-init animated-delay-1" animateOnScroll animationName="animated fadeInRight">
-    <h2 class="calculatorformheader">Калкулатор за годишен данък</h2>
-    <form class="example-form">
-      <mat-form-field class="example-full-width">
-        <input matInput placeholder="Сума (брутно в левове)" value="0">
-      </mat-form-field>
-      <mat-form-field>
-        <input matInput placeholder="Година">
-      </mat-form-field>
-      <mat-checkbox class="cb">Lorem ipsum</mat-checkbox>
-      <mat-checkbox class="cb">Lorem ipsum</mat-checkbox>
-      <label>Lorem ipsum</label>
-      <mat-slider thumbLabel [displayWith]="formatLabel" tickInterval="100000" min="1000" max="100000"></mat-slider>
-      <button class="calBtn">Изчисли</button>
-
-      <mat-form-field class="example-full-width">
-        <textarea matInput placeholder="Резултат:"></textarea>
-      </mat-form-field>
-    </form>
-
-  </div>
-</div>
-<div class="ServicesHome hide-on-init animated-delay-1" animateOnScroll animationName="animated fadeInRight">
-  <div class="borderDates">
-    <div class="onehalf">
-      <div class="inline">
-        <h1 class="headerText">Важни дати</h1>
+    <div class="concreteservice">
+      <div class="aboutdivs hide-on-init animated-delay-1" id="aboutdiva"animateOnScroll animationName="animated fadeInLeft">
+        <img class="servpic" src=".\assets\service2.jpg">
       </div>
-    </div>
-  </div>
-  <div class="datesdiv">
-    <div class="card">
-      <img src=".\assets\cal.jpg" alt="Avatar" class="datesimg" style="width:40%;;height:auto;">
-      <h1 class="servhead">Краен срок</h1>
-      <div class="info">
-        <p class="datesinfo">Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt.</p>
+      <div class="aboutdivs hide-on-init animated-delay-1" id="aboutdivb" animateOnScroll animationName="animated fadeInRight">
+        <h1 class="servheader"> Счетоводни услуги</h1>
+        <p class="servicetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
       </div>
     </div>
 
-    <div class="card">
-      <img src=".\assets\cal.jpg" alt="Avatar" class="datesimg" style="width:40%;;height:auto;">
-      <h1 class="servhead">Краен срок</h1>
-      <p class="datesinfo">Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt.</p>
+    <div class="concreteservice">
+      <div class="aboutdivs hide-on-init animated-delay-1" animateOnScroll animationName="animated fadeInLeft">
+        <h1 class="servheader">Данъчни услуги</h1>
+        <p class="servicetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+           minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+      </div>
+      <div class="aboutdivs hide-on-init animated-delay-1" animateOnScroll animationName="animated fadeInLeft">
+        <img class="servpic" src=".\assets\service1.jpg">
+      </div>
+    </div>
+
+    <div class="concreteservice">
+      <div class="aboutdivs hide-on-init animated-delay-1" id="aboutdivd"animateOnScroll animationName="animated fadeInLeft">
+        <img class="servpic" src=".\assets\service3.jpg">
+      </div>
+      <div class="aboutdivs hide-on-init animated-delay-1" id="aboutdivc" animateOnScroll animationName="animated fadeInRight">
+        <h1 class="servheader"> Администратиране на задължения</h1>
+        <p class="servicetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+      </div>
     </div>
 
 
-    <div class="card">
-      <img src=".\assets\cal.jpg" alt="Avatar" class="datesimg" style="width:40%;;height:auto;">
-      <h1 class="servhead">Краен срок</h1>
-      <p class="datesinfo">Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt.</p>
+    <div class = "contactline hide-on-init animated-delay-1"  animateOnScroll  animationName="animated fadeInLeft">
+      <p class="contactlinetext">Ако имате нужда от нашите услуги, свържете се с нас сега</p>
+      <a class = "link" class="clink" routerLink="/contact" routerLinkActive="active"><button class="contactlinebutton">Контакт</button></a>
     </div>
+    <div class="ServicesHome hide-on-init animated-delay-1" animateOnScroll animationName="animated fadeInRight">
+      <h1 id="ServTitle" class="hide-on-init animated-delay-1" animateOnScroll animationName="animated fadeInLeft">Важни дати</h1>
 
-  </div>
-</div>
+        <div class="datesdiv">
+          <div class="card">
+            <img src=".\assets\cal.jpg" alt="Avatar" class="datesimg" >
+            <h1 class="servhead">Краен срок</h1>
+              <div class="info">
+                <p class="datesinfo">Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt.</p>
+               </div>
+          </div>
+          <div class="card">
+            <img src=".\assets\cal.jpg" alt="Avatar" class="datesimg" >
+            <h1 class="servhead">Краен срок</h1>
+              <div class="info">
+                <p class="datesinfo">Lorem ipsum dolor sit amet,
+                   consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt.</p>
+               </div>
+          </div>
+          <div class="card" id="ni">
+            <img src=".\assets\cal.jpg" alt="Avatar" class="datesimg" >
+            <h1 class="servhead">Краен срок</h1>
+              <div class="info">
+                <p class="datesinfo">Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt.</p>
+              </div>
+            </div>
+          </div>
+
+
+

@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AccountingServicesComponent } from './accounting-services/accounting-services.component';
 /*ANGULAR-MARTERIAL*/
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatCardModule} from '@angular/material';
+import {MatCardModule, MatButtonModule, MatIconModule} from '@angular/material';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material';
@@ -22,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+import {  MatSidenavModule, MatListModule } from  '@angular/material';
 
 
 
@@ -49,8 +50,12 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     MatInputModule,
     MatDatepickerModule,
     MatCheckboxModule,
-    MatSliderModule
-    
+    MatSliderModule,
+    MatButtonModule,
+    MatIconModule,
+    MatSidenavModule,
+     MatListModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

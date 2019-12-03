@@ -45,7 +45,7 @@
     width:100%;
     height:auto;
     position: relative;
-    
+
 }
 #profpic{
     text-align: center;
@@ -54,20 +54,20 @@
     margin-top:5%;
 
 }
-h3 { 
-    display: flex; 
-    flex-direction: row; 
-} 
-  
-h3:before, 
-h3:after { 
-    content: ""; 
-    flex: 1 1; 
-    border-bottom: 2px solid #000; 
+h3 {
+    display: flex;
+    flex-direction: row;
+}
+
+h3:before,
+h3:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #000;
     margin-left:3%;
     margin-right:3%;
     margin-bottom:5%;
-} 
+}
 .moto{
     color:#0c2461;
     font-size: 1.2vw;
@@ -91,4 +91,102 @@ h3:after {
     margin-left:10%;
     margin-right:10%;
     text-align: center;
+}
+
+@media  (max-width: 376px){
+
+.container{
+    width:100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top:0;
+    padding-bottom:0;
+    height:auto;
+    margin-top:-1%;
+}
+.header{
+    width:100%;
+    height:auto;
+    background-color:#0c2461;
+}
+.headerText{
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size:4vw;
+    font-weight: bold;
+
+    text-align: center;
+    color:#ffffff;
+}
+.firstContent{
+  width:100%;
+  height:auto;
+}
+.firstContentHeader{
+  font-size:3vw;
+  text-align: center;
+  color:#0c2461;
+  margin-top:5%;
+  margin-bottom: 3%;
+}
+.firstContentText{
+  font-size:2vw;
+  text-align: center;
+  color:#0c2461;
+  margin-left:10%;
+  margin-right:10%;
+}
+.ImageLine{
+  text-align: center;
+  width:100%;
+  height:auto;
+  position: relative;
+
+}
+#profpic{
+    text-align: center;
+    border-radius: 50%;
+    width:20%;
+    margin-top:5%;
+
+}
+h3 {
+    display: flex;
+    flex-direction: row;
+}
+
+h3:before,
+h3:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #000;
+    margin-left:3%;
+    margin-right:3%;
+    margin-bottom:10%;
+}
+.moto{
+    color:#0c2461;
+    font-size: 2.5vw;
+    font-style: italic;
+    margin-top:2%;
+}
+.secondContent{
+    width:100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top:0;
+    padding-bottom:3%;
+    height:auto;
+
+}
+.lastText{
+    color:#0c2461;
+    font-size: 2vw;
+    margin-top:4%;
+    margin-bottom:3%;
+    margin-left:10%;
+    margin-right:10%;
+    text-align: center;
+}
 }

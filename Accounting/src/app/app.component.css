@@ -26,16 +26,29 @@ mat-toolbar{
     font-size: 1.3vw;
     text-decoration: none;
 }
+
 .spacer{
     flex:1 1 auto;
 }
-
+.sdisplay{
+  display: none;
+}
+label{
+  float: right;
+  display:none;
+}
+#toggle{
+  display:none;
+}
+.logo1{
+  display: none;
+}
 
 
 
 /*FOOTER*/
 #facebook{
-    width:4%;
+    width:9%;
     margin-left:35%;
 }
 .footer{
@@ -43,13 +56,18 @@ mat-toolbar{
     width: 100%;
     background-color:#0c2461;
     display: inline-table;
-    
+
 }
 .botsections{
     display: inline-block;
     margin-left:5%;
     margin-top:2%;
-}
+
+
+  }
+  .first{
+    margin-left: 1%;
+  }
 p{
     color:#ffffff;
     font-size:0.8vw;
@@ -65,11 +83,12 @@ ul {
     padding: 0;
   }
 .third{
-    width:50%;
+    width:20%;
     text-align: center;
     height:auto;
     position: absolute;
-    
+    margin-left:30%;
+
 
 }
 h3{
@@ -97,8 +116,159 @@ h3{
     text-decoration: none;
     color:white;
 }
+.horl{
+  display: none;
+}
+.lqlq{
+  display: none;
+}
+@media  (max-width: 376px){
+  label{
+    margin-top:-3%;
+    margin-right: 2%;
+    display:block;
+    margin-bottom: -5%;
+  }
+  #toggle{
+    margin-top: -14%;
+    display:block;
+    text-align: center;
+    margin-bottom: -5%;
 
+  }
 
+mat-toolbar{
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.logo{
+  display: none;
+}
+.logo1{
+  display:block;
+  width:25%;
+    margin-top:3%;
+    margin-bottom: -5%;
+}
+.link{
+
+  color:#434a4d;
+  font-size: 3vw;
+  text-decoration: none;
+  cursor: pointer;
+}
+  #toggle:checked + mat-toolbar{
+    display: inline-flex;
+  }
+
+  #facebook{
+    width:6%;
+    text-align: center;
+    margin-left:35%;
+
+}
+.footer{
+
+    width: 100%;
+    background-color:#0c2461;
+    display: flex;
+    flex-direction: column;
+
+}
+.botsections{
+  margin-top:0%;
+}
+
+  .first{
+    text-align: center;
+
+}
+
+p{
+    color:#ffffff;
+    font-size:3vw;
+}
+
+.menu{
+    color:#ffffff;
+    font-size:3vw;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.third{
+text-align: center;
+display:none;
+}
+
+h3{
+    color:#ffffff;
+    font-size: 4vw;
+}
+
+.totalbottom{
+    width:100%;
+    text-align: center;
+}
+
+.supersmall{
+    font-size: 2.5vw;
+}
+
+.company{
+    margin-top:3%;
+}
+
+.Ours{
+    margin-top:-1%;
+}
+
+.fbheader{
+    margin-bottom:1%;
+
+}
+
+.ymdlink{
+    text-decoration: none;
+    color:white;
+}
+
+#second{
+  text-align: center;
+  margin-top:-20%;
+  margin-left: 0%;
+}
+
+#third{
+  text-align: center;
+  margin-left: -1%;
+}
+
+#fifth{
+  text-align: center;
+  margin-left: -55%;
+}
+#second { order: 1; }
+#first{ order: 2;}
+#third{ order:3;}
+#fourth{ order: 5;}
+#fifth{ order: 4;}
+
+.horl{
+  display: block;
+}
+hr {
+  border-top: 1px solid red;
+}
+.lqlq{
+  display: block;
+}
+}
 
 
 

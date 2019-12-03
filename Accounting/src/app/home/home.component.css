@@ -13,14 +13,14 @@
 .carousel{
     width:100%;
     height:auto;
-    
+
 }
 video{
     width: 100%;
     height: 100%;
     position: relative;
     filter: brightness(0.7);
-    
+
 }
 #toobright{
     filter: brightness(0.5);
@@ -111,7 +111,7 @@ fa-icon{
     width:100%;
 }
 .card{
-    
+
     height: 100%;
     width:100%;
     margin-top:4%;
@@ -127,7 +127,7 @@ fa-icon{
     width: 100%;
     height: 100%;
   }
-  
+
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -137,23 +137,23 @@ fa-icon{
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
-  
+
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
-  
+
   .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
   }
-  
+
   .flip-card-front {
     background-color: #bbb;
     color: black;
   }
-  
+
   .flip-card-back {
     color: #0c2461;
     transform: rotateY(180deg);
@@ -161,10 +161,12 @@ fa-icon{
 .servhead{
     text-align: center;
     font-size: 1.7vw;
+
     margin-top:1%;
     color:#0c2461;
 }
 .servimg{
+  margin-top:3%
 }
 .servtext{
     margin-top:7%;
@@ -182,31 +184,35 @@ fa-icon{
     height:13%;
 }
 .contactlinetext{
-    font-size: 1.2vw;
-    text-align: center;
-    color:#ffffff;
-    vertical-align: middle;
-    position: absolute;
-    margin-top:2.5%;
-    margin-left:25%;
+  font-size: 1.6vw;
+  width: 100%;
+  text-align: center;
+  color:#ffffff;
+  vertical-align: middle;
+  position: absolute;
+
+  padding-bottom: 6%;
+  padding-top: 2%;
+  margin-left:-7%;
 }
 .contactlinebutton{
-    height:30%;
-    margin-left:50%;
-    font-size: 1.1vw;
-    margin-top:2.5%;
-    text-align: center;
-    margin-left:70%;
-    display: inline-block;
-    border-radius: 4px;
-  background-color: #ffffff;
-  border: none;
-  color: #0c2461;
+  height:30%;
+  margin-left:50%;
+  font-size: 1.1vw;
+
+  margin-top: 2%;
   text-align: center;
-  font-size: 1vw;
-    width:7%;
-  transition: all 0.5s;
-  cursor: pointer;
+  margin-left:70%;
+  display: inline-block;
+  border-radius: 4px;
+background-color: #ffffff;
+border: none;
+color: #0c2461;
+text-align: center;
+font-size: 1vw;
+  width:7%;
+transition: all 0.5s;
+cursor: pointer;
 }
 
 /*ABOUT*/
@@ -253,16 +259,16 @@ fa-icon{
     }
     .carousel{
         width:100%;
-        
+
     }
     video{
         margin-top:63px;
         width: 100%;
         height:auto;
         position: relative;
-    
+
         border-width: 1px;
-        
+
     }
     .carousel-caption{
         height: 60%;
@@ -290,7 +296,7 @@ fa-icon{
         background: rgba(11, 12, 11, .6);
         position: fixed;
     }
-    
+
     .item.active{
         position: relative;
         z-index: 0;

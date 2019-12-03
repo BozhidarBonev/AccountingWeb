@@ -1,7 +1,7 @@
-<div class="container " id="con"  >  
+<div class="container " id="con"  >
     <div id="myCarousel" class="carousel" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="item active"> 
+        <div class="item active">
                 <video onloadedmetadata="this.Play()" class="video-fluid" height="600" autoplay loop [muted]="true">
                         <source src="./assets/vidone.mp4" type="video/mp4" />
                       </video>
@@ -10,7 +10,7 @@
             <h3>Малък текст 1</h3>
           </div>
         </div>
-  
+
         <div class="item">
                 <video onloadedmetadata="this.Play()" autoplay loop [muted]="true">
                         <source src="./assets/vidtwo.mp4" type="video/mp4" />
@@ -20,7 +20,7 @@
             <h3>Малък текст 2</h3>
           </div>
         </div>
-      
+
         <div class="item">
                 <video id="toobright"  onloadedmetadata="this.Play()" class="video-fluid" autoplay loop [muted]="true">
                         <source src="./assets/vidthree.mp4" type="video/mp4" />
@@ -30,7 +30,7 @@
             <h3>Малък текст 3</h3>
           </div>
         </div>
-    
+
       </div>
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
@@ -57,7 +57,7 @@
         <fa-icon [icon]="faPiggyBank"></fa-icon>
         <p class="iconText">Lorem ipsum dolor sit amet consectetur</p>
       </div>
-        
+
     </div>
     <div class = "onethird TLine">
         <div class="inline">
@@ -70,35 +70,22 @@
 
 
   <div class="ServicesHome hide-on-init animated-delay-1" animateOnScroll animationName="animated fadeInRight">
-    <h1 id="ServTitle">Счетоводни услуги</h1>
+    <h1 id="ServTitle">Услуги</h1>
   <div class="miniservices">
       <div class = "card">
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                  <h1 class="servhead">Услуга 1</h1> 
+                  <h1 class="servhead">Счетоводни услуги</h1>
+                  <p style="color: white;">asdsad</p>
                 <img src=".\assets\servone.jpg" alt="Avatar"  class="servimg" style="width:98%;;height:auto;">
               </div>
               <div class="flip-card-back">
-                <h1 class="servhead">Услуга 1</h1> 
-                <p class = "servtext">Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur</p> 
+                <h1 class="servhead">Счетоводни услуги</h1>
+                <p style="color: white;">asdsad</p>
                 <p class = "servtext">Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur</p>
-              </div>
-            </div>
-          </div>
-      </div>
-
-      <div class = "card">      
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                  <h1 class="servhead">Услуга 2</h1> 
-                <img src=".\assets\servtwo.jpg" alt="Avatar" class="servimg" style="width:98%;;height:auto;">
-              </div>
-              <div class="flip-card-back">
-                <h1 class="servhead">Услуга 2</h1> 
-                <p class = "servtext">Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur</p> 
                 <p class = "servtext">Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur</p>
+                <a class = "link" routerLink="/services" routerLinkActive="active">Научете повече</a>
               </div>
             </div>
           </div>
@@ -108,13 +95,33 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                  <h1 class="servhead">Услуга 3</h1> 
+                  <h1 class="servhead">Данъчни услуги</h1>
+                  <p style="color: white;">asdsad</p>
+                <img src=".\assets\servtwo.jpg" alt="Avatar" class="servimg" style="width:98%;;height:auto;">
+              </div>
+              <div class="flip-card-back">
+                <h1 class="servhead">Данъчни услуги</h1>
+                <p style="color: white;">asdsad</p>
+                <p class = "servtext">Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur</p>
+                <p class = "servtext">Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur</p>
+                <a class = "link" routerLink="/services" routerLinkActive="active">Научете повече</a>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class = "card">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                  <h1 class="servhead">Администратиране на задължения</h1>
                 <img src=".\assets\servthree.jpg" alt="Avatar" class="servimg" style="width:98%;;height:auto;">
               </div>
               <div class="flip-card-back">
-                <h1 class="servhead">Услуга 3</h1> 
-                <p class = "servtext">Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur</p> 
+                <h1 class="servhead">Администратиране на задължения</h1>
                 <p class = "servtext">Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur</p>
+                <p class = "servtext">Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur</p>
+                <a class = "link" routerLink="/services" routerLinkActive="active">Научете повече</a>
               </div>
             </div>
           </div>
@@ -126,7 +133,7 @@
 
 
 <div class = "contactline hide-on-init animated-delay-1"  animateOnScroll  animationName="animated fadeInLeft">
-  <p class="contactlinetext">Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur ipsum</p>
+  <p class="contactlinetext">Ако имате нужда от нашите услуги, свържете се с нас сега</p>
   <a class = "link" routerLink="/contact" routerLinkActive="active"><button class="contactlinebutton">Контакт</button></a>
 </div>
 
@@ -139,14 +146,14 @@
   </div>
   <div class="aboutdivs hide-on-init animated-delay-1"  animateOnScroll animationName="animated fadeInDown">
     <h1 class = "aboutheader"> За Нас</h1>
-    <p class = "abouttext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+    <p class = "abouttext">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-       sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
-       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
-       minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+       sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
+       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+       minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
        commodo consequat.</p>
   </div>
 </div>
