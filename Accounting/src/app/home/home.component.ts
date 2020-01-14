@@ -8,9 +8,9 @@ import { faCommentDollar } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  faBook  =faBook  ;
-  faPiggyBank  =faPiggyBank  ;
-  faCommentDollar  =faCommentDollar ;
+  faBook = faBook  ;
+  faPiggyBank = faPiggyBank  ;
+  faCommentDollar = faCommentDollar ;
   constructor() { }
 
   ngOnInit() {

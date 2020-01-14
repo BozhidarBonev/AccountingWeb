@@ -2,8 +2,8 @@
     <div id="myCarousel" class="carousel" data-ride="carousel">
       <div class="carousel-inner">
         <div class="item active">
-                <video onloadedmetadata="this.Play()" class="video-fluid" height="600" autoplay loop [muted]="true">
-                        <source src="./assets/vidone.mp4" type="video/mp4" />
+                <video  class="video-fluid" height="600" autoplay loop [muted]="true">
+                        <source src="./assets/welcome1.mp4" type="video/mp4" />
                       </video>
           <div class="carousel-caption">
             <h1>Заглавие 1</h1>
@@ -12,7 +12,7 @@
         </div>
 
         <div class="item">
-                <video onloadedmetadata="this.Play()" autoplay loop [muted]="true">
+                <video  autoplay loop [muted]="true">
                         <source src="./assets/vidtwo.mp4" type="video/mp4" />
                       </video>
           <div class="carousel-caption">
@@ -22,9 +22,9 @@
         </div>
 
         <div class="item">
-                <video id="toobright"  onloadedmetadata="this.Play()" class="video-fluid" autoplay loop [muted]="true">
-                        <source src="./assets/vidthree.mp4" type="video/mp4" />
-                      </video>
+           <video id="toobright" class="video-fluid" autoplay loop [muted]="true">
+                      <source src="./assets/vidthree.mp4" type="video/mp4" />
+            </video>
           <div class="carousel-caption">
             <h1>Заглавие 3</h1>
             <h3>Малък текст 3</h3>
@@ -45,24 +45,24 @@
 
 
 
-  <div class="underCar "  >
+  <div class="underCar">
     <div class = "onethird Fline">
         <div class="inline">
         <fa-icon [icon]="faBook"></fa-icon>
-        <p class="iconText">Lorem ipsum dolor sit amet consectetur</p>
+        <p class="iconText">Доверете счетоводството си на нас</p>
         </div>
     </div>
     <div class = "onethird SLine">
       <div class="inline">
         <fa-icon [icon]="faPiggyBank"></fa-icon>
-        <p class="iconText">Lorem ipsum dolor sit amet consectetur</p>
+        <p class="iconText">Счетоводно обслужване на атрактивни цени</p>
       </div>
 
     </div>
     <div class = "onethird TLine">
         <div class="inline">
         <fa-icon [icon]="faCommentDollar"></fa-icon>
-        <p class="iconText">Lorem ipsum dolor sit amet consectetur</p>
+        <p class="iconText">Ние се грижим всичко да е в срок</p>
       </div>
     </div>
 
@@ -77,34 +77,34 @@
             <div class="flip-card-inner">
               <div class="flip-card-front">
                   <h1 class="servhead">Счетоводни услуги</h1>
-                  <p style="color: white;">asdsad</p>
+                  <p class="ndis"style="color: white;">asdsad</p>
                 <img src=".\assets\servone.jpg" alt="Avatar"  class="servimg" style="width:98%;;height:auto;">
               </div>
               <div class="flip-card-back">
                 <h1 class="servhead">Счетоводни услуги</h1>
-                <p style="color: white;">asdsad</p>
+                <p  class="ndis"style="color: white;">asdsad</p>
                 <p class = "servtext">Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur</p>
                 <p class = "servtext">Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur</p>
-                <a class = "link" routerLink="/services" routerLinkActive="active">Научете повече</a>
+                <a class = "link" routerLink="/services" [fragment]="'purvi'">Научете повече</a>
               </div>
             </div>
           </div>
       </div>
 
-      <div class = "card">
+      <div class = "card" >
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                   <h1 class="servhead">Данъчни услуги</h1>
-                  <p style="color: white;">asdsad</p>
+                  <p  class="ndis"style="color: white;">asdsad</p>
                 <img src=".\assets\servtwo.jpg" alt="Avatar" class="servimg" style="width:98%;;height:auto;">
               </div>
               <div class="flip-card-back">
                 <h1 class="servhead">Данъчни услуги</h1>
-                <p style="color: white;">asdsad</p>
+                <p  class="ndis"style="color: white;">asdsad</p>
                 <p class = "servtext">Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur</p>
                 <p class = "servtext">Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur</p>
-                <a class = "link" routerLink="/services" routerLinkActive="active">Научете повече</a>
+                <p><a routerLink="/services" [fragment]="'vtori'" routerLinkActive="active">Научете повече</a></p>
               </div>
             </div>
           </div>
@@ -114,46 +114,50 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                  <h1 class="servhead">Администратиране на задължения</h1>
+                  <h1 class="servhead">Администриране на възнаграждения</h1>
                 <img src=".\assets\servthree.jpg" alt="Avatar" class="servimg" style="width:98%;;height:auto;">
               </div>
               <div class="flip-card-back">
-                <h1 class="servhead">Администратиране на задължения</h1>
+                <h1 class="servhead">Администриране на възнаграждения</h1>
                 <p class = "servtext">Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur</p>
                 <p class = "servtext">Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur</p>
-                <a class = "link" routerLink="/services" routerLinkActive="active">Научете повече</a>
+                <a class = "link" routerLink="/services" [fragment]="'treti'">Научете повече</a>
               </div>
             </div>
           </div>
       </div>
   </div>
 </div>
-
 
 
 
 <div class = "contactline hide-on-init animated-delay-1"  animateOnScroll  animationName="animated fadeInLeft">
   <p class="contactlinetext">Ако имате нужда от нашите услуги, свържете се с нас сега</p>
-  <a class = "link" routerLink="/contact" routerLinkActive="active"><button class="contactlinebutton">Контакт</button></a>
+  <div class="cbutton"><button class="contactlinebutton" routerLink="/contact">Контакт</button></div>
 </div>
 
 
 
 
-<div class="miniaboutus">
-  <div class="aboutdivs hide-on-init animated-delay-1"  animateOnScroll animationName="animated fadeInUp">
+
+<div class="miniaboutus" >
+  <div class="aboutdivs hide-on-init animated-delay-1" id="first"  animateOnScroll animationName="animated fadeInUp">
     <img class = "aboutpic" src=".\assets\miniaboutphoto.jpg">
   </div>
-  <div class="aboutdivs hide-on-init animated-delay-1"  animateOnScroll animationName="animated fadeInDown">
+  <div class="aboutdivs hide-on-init animated-delay-1" id="second" animateOnScroll animationName="animated fadeInDown">
     <h1 class = "aboutheader"> За Нас</h1>
-    <p class = "abouttext">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-       sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
-       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-       minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-       commodo consequat.</p>
+    <p class = "abouttext">Счетоводните ни услуги осигуряват всичко, от което фирмата Ви се нуждае за да работи в
+        съответствие с данъчното и осигурителното законодателство. При сключване на договор за
+        счетоводно обслужване ще се съобразим с конкретните нужди на фирмата Ви - като размер на
+        документооборота, специфични особености на бизнеса Ви и други.
+        Можете да ползвате и поотделно всяка от посочените услуги - например да поверите на нас
+        само годишното приключване, или пък грижата относно трудовите договори и осигуровките.
+        Независимо от степента на важност на счетоводните процеси за бизнеса ви, ще ви предоставим
+        услуги, които напълно отговарят на нуждите на организацията ви и ще ви позволи да
+        използвате счетоводната информация за правилно управление на вашия бизнес.
+        Ще ви помогнем при тълкуването на българското данъчно законодателство и приложимите
+        международни спогодби и европейски директиви при взаимоотношенията ви с данъчната
+        администрация в България с цел минимизиране на данъчните рискове за бизнеса ви</p>
+
   </div>
 </div>

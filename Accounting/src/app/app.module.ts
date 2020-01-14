@@ -22,7 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
-import {  MatSidenavModule, MatListModule } from  '@angular/material';
+import {  MatSidenavModule, MatListModule } from '@angular/material';
 
 
 

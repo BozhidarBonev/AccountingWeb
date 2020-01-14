@@ -12,15 +12,16 @@
         navbar.classList.remove("sticky");
       }
     }
-    </script>
-<a class = "link" routerLink="/home" routerLinkActive="active"><img src=".\assets\logo.png" class = "logo1"></a>
+</script>
+
+<a class = "link" routerLink="/home" routerLinkActive="active" class = "logo1">Кей Пи Ай Консулт</a>
 <label  for="toggle">
     <mat-icon>menu</mat-icon>
   </label>
   <input type="checkbox" class="hidden" id="toggle">
 
 <mat-toolbar  id="navbar">
-  <a class = "link" routerLink="/home" routerLinkActive="active"><img src=".\assets\logo.png" class = "logo"></a>
+  <a class = "link" routerLink="/home" routerLinkActive="active" class = "logo">Кей Пи Ай Консулт</a>
   <span class="spacer"></span>
 
   <a class = "link " routerLink="/home" routerLinkActive="active">Начало</a>
@@ -49,13 +50,13 @@
     <h3>Услуги</h3>
     <ul>
       <li>
-          <p><a class = "menu" routerLink="/services" [fragment]="''" routerLinkActive="active">Счетоводни услуги</a></p>
+          <p><a class = "menu" [routerLink]="['services']" [fragment]="'purvi'">Счетоводни услуги</a></p>
       </li>
       <li>
-          <p><a class = "menu" routerLink="/services" [fragment]="''" routerLinkActive="active">Данъчни Услуги</a></p>
+          <p><a class = "menu" [routerLink]="['services']" [fragment]="'vtori'" >Данъчни Услуги</a></p>
       </li>
       <li>
-          <p><a class = "menu" routerLink="/services" [fragment]="''" routerLinkActive="active">Администратиране на задължения</a></p>
+          <p><a class = "menu" [routerLink]="['services']" [fragment]="'treti'">Администриране на възнаграждения</a></p>
       </li>
     </ul>
   </div>
@@ -81,24 +82,24 @@
     <h3>Полезни Страници</h3>
 <ul>
   <li>
-    <p><a class = "menu" href="">Страница 1</a></p>
+    <p><a class = "menu" href="https://nap.bg/" target="_blank">НАП</a></p>
   </li>
   <li>
-    <p><a class = "menu" href="">Страница 2</a></p>
+    <p><a class = "menu" href="http://www.brra.bg/"target="_blank" >Търговски регистър</a></p>
   </li>
   <li>
-    <p><a class = "menu" href="">Страница 3</a></p>
+    <p><a class = "menu" href="https://www.nssi.bg/aboutbg" target="_blank">НОИ</a></p>
   </li>
 </ul>
 </div>
-  <div class = "botsections third" id="fifth">
+  <div class = "botsections third" >
       <h3 class="fbheader">Последвайте ни </h3>
-      <a href=""><img src = ".\assets\facebook.png" id="facebook"></a>
+      <a href="https://www.facebook.com/"><img src = ".\assets\faceboo1k.png" id="facebook" ></a>
 
   </div>
   <div class = "botsections lqlq" id="fifth">
       <h3 class="fbheader">Последвайте ни </h3>
-      <a href=""><img src = ".\assets\facebook.png" id="facebook"></a>
+      <a href="https://www.facebook.com/"><img src = ".\assets\faceboo1k.png" id="facebook"></a>
 
   </div>
   <div class = "totalbottom" id="fourth">
