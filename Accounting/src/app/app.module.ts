@@ -23,7 +23,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import {  MatSidenavModule, MatListModule } from '@angular/material';
-
+import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
 
 
 
@@ -57,7 +57,8 @@ import {  MatSidenavModule, MatListModule } from '@angular/material';
      MatListModule
 
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy,
+    useClass:HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

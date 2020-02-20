@@ -16,6 +16,7 @@
                 <p  class="div31"><fa-icon class="div311" [icon]="faEnvelopeOpenText"></fa-icon>    Мейл:</p>
                 <p class="div44">k.p.i.consult@abv.bg</p>
                 <p class="div31"><fa-icon class="div311" [icon]="faCalendarAlt"></fa-icon> Работно Време:</p>
+                <br>
                 <p class="div44">Понеделник - Петък 00:08-00:16</p>
                 <p class="div44">Събота - Неделя 00:08-00:16</p>
         </ul>
@@ -34,7 +35,7 @@
 
 
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Име"
+            <input class="input" matInput placeholder="Име"
             ngModel
             name="username"
             required
@@ -45,7 +46,7 @@
           </mat-form-field>
 
           <mat-form-field class="example-full-width"  >
-              <input matInput placeholder="Мейл"
+              <input class="input" matInput placeholder="Мейл"
               [(ngModel)]="userModel.email"
               type="email"
 
@@ -57,12 +58,12 @@
               <mat-error *ngIf="!email?.pattern && email.touched">Моля въведете валиден мейл адрес</mat-error>
             </mat-form-field>
             <mat-form-field class="example-full-width">
-                <input matInput placeholder="Телефон"
+                <input class="input" matInput placeholder="Телефон"
                 name="phone"
                 [(ngModel)]="userModel.phone"  >
               </mat-form-field>
           <mat-form-field class="example-full-width">
-            <textarea matInput placeholder="Съобщение"
+            <textarea class="input" matInput placeholder="Съобщение"
             name="message"
             [(ngModel)]="userModel.message"
             ngModel
