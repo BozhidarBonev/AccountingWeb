@@ -207,8 +207,8 @@ transition: all 0.5s;
     margin-top:1%;
     color: black;
     flex-direction: column;
-    width: 30%;
-    margin-left: 35%;
+    width: 70%;
+    margin-left: 15%;
     height: auto;
 }
 .info{
@@ -230,10 +230,10 @@ transition: all 0.5s;
 @media  (max-width: 376px){
 /*first line*/
 .headerText{
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 4%;
+  padding-bottom: 4%;
   color:#ffffff;
-  font-size: 4vw;
+  font-size: 6vw;
   font-weight: bold;
   text-align: center;
 }
@@ -323,8 +323,8 @@ transition: all 0.5s;
   margin-top:1%;
   color: black;
   flex-direction: column;
-  width: 30%;
-  margin-left: 35%;
+  width: 70%;
+  margin-left: 15%;
   height: auto;
 }
 .info{
@@ -399,10 +399,10 @@ position: relative;
 @media  (min-width: 376px) and (max-width: 600px){
   /*first line*/
   .headerText{
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 4%;
+    padding-bottom: 4%;
     color:#ffffff;
-    font-size: 4vw;
+    font-size: 6vw;
     font-weight: bold;
     text-align: center;
   }
@@ -482,8 +482,8 @@ position: relative;
     margin-top:1%;
     color: black;
     flex-direction: column;
-    width: 30%;
-    margin-left: 35%;
+    width: 70%;
+    margin-left: 15%;
     height: auto;
   }
   .info{
@@ -543,10 +543,10 @@ position: relative;
   @media  (min-width: 600px) and (max-width: 1025px){
     /*first line*/
     .headerText{
-      padding-top: 2%;
-      padding-bottom: 2%;
+      padding-top: 3%;
+      padding-bottom: 3%;
       color:#ffffff;
-      font-size: 4vw;
+      font-size: 5.6vw;
       font-weight: bold;
       text-align: center;
     }
@@ -573,7 +573,7 @@ position: relative;
     #aboutdivb { order: 1; }
     #aboutdivc { order: 5; }
     #aboutdivd { order: 6; }
-  
+
     .aboutdivs{
       flex-basis: 100%;
       overflow: hidden; /* [1.2] Hide the overflowing of child elements */
@@ -618,7 +618,7 @@ position: relative;
       margin-right:10%;
       color:#434a4d;
     }
-  
+
     /*Important dates*/
     .datesinfo{
       text-align: center;
@@ -626,8 +626,8 @@ position: relative;
       margin-top:1%;
       color: black;
       flex-direction: column;
-      width: 30%;
-      margin-left: 35%;
+      width: 70%;
+      margin-left: 15%;
       height: auto;
     }
     .info{
@@ -647,7 +647,7 @@ position: relative;
     #ni{
       padding-bottom: 5%;
     }
-  
+
     /*CONTACTLINE*/
     .contactlinetext{
       position: relative;
@@ -670,7 +670,7 @@ position: relative;
         border: none;
         color: #0c2461;
       }
-  
+
       .cbutton{
         text-align:center;
         position: relative;

@@ -5,7 +5,8 @@ mat-toolbar{
     background-color: #ffffff;
     position: sticky;
     position: -webkit-sticky; /* For macOS/iOS Safari */
-    top: 0; /* Sets the sticky toolbar to be on top */
+    top: 0;
+    left:0; /* Sets the sticky toolbar to be on top */
     z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
 }
 .sticky {
@@ -57,33 +58,39 @@ label{
 /*FOOTER*/
 #facebook{
     width:9%;
-    margin-left:35%;
-
 }
 .footer{
-
     width: 100%;
     background-color:#0c2461;
     display: inline-table;
-
+    padding: 0;
+    margin: 0;
+}
+#afacebook{
+  padding-left: 0;
+  margin-left: 0;
+}
+.footerfirstsection{
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ padding-left: 5%;
+ padding-right: 5%;
+ padding-top: 2.5%;
 }
 .botsections{
-    display: inline-block;
-    margin-left:5%;
-    margin-top:2%;
-
-
-  }
-  .first{
-    margin-left: 1%;
+  width: 25%;
+  padding-left: 5%;
   }
 p{
     color:#ffffff;
-    font-size:0.8vw;
+    font-size:1vw;
+    text-align: left;
+
 }
 .menu{
     color:#ffffff;
-    font-size:0.8vw;
+    font-size:1vw;
     text-decoration: none;
 }
 ul {
@@ -91,31 +98,40 @@ ul {
     margin: 0;
     padding: 0;
   }
-.third{
-    width:20%;
-    text-align: center;
-    height:auto;
-    position: absolute;
-    margin-left:30%;
-
-
+.footericons{
+  font-size: 25px;
+  padding-right: 2%;
 }
 h3{
     color:#ffffff;
-    font-size: 1.1vw;
+    font-size: 1.3vw;
+    padding-bottom: 8%;
+
+}
+#verticalline{
+  font-weight: 1000;
+  padding-right: 4%;
 }
 .totalbottom{
     width:100%;
     text-align: center;
+    background-color: #071331;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
 }
 .supersmall{
-    font-size: 0.7vw;
+    font-size: 0.9vw;
+    text-align: center;
 }
 .company{
     margin-top:3%;
 }
 .Ours{
-    margin-top:-1%;
+  padding: 0;
+  margin: 0;
+  margin-top: -1%;
 }
 .fbheader{
     margin-bottom:1%;
@@ -133,6 +149,7 @@ h3{
 }
 
 @media  (max-width: 376px){
+  /*header*/
   label{
     margin-top:-7%;
     margin-right: 2%;
@@ -164,11 +181,10 @@ mat-toolbar{
 .logo1{
   display:block;
   width:25%;
-    margin-top:3%;
-    margin-bottom: -5%;
+  margin-top:3%;
+  margin-bottom: -5%;
 }
 .link{
-
   color:#0c2461;
   font-size: 3vw;
   text-decoration: none;
@@ -178,37 +194,37 @@ mat-toolbar{
     display: inline-flex;
   }
 
-  #facebook{
-    width:6%;
-    text-align: center;
-    margin-left:36.5%;
 
+  /*footer*/
+#facebook{
+    width:44%;
+}
+.footericons{
+  font-size: 25px;
+  padding-right: 2%;
 }
 .footer{
-
     width: 100%;
     background-color:#0c2461;
-    display: flex;
-    flex-direction: column;
-
 }
+.footerfirstsection{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 2.5%;
+  padding-bottom: 10%;
+ }
 .botsections{
   margin-top:0%;
 }
-
-  .first{
-    text-align: center;
-
-}
-
 p{
     color:#ffffff;
-    font-size:3vw;
+    font-size:4vw;
 }
-
 .menu{
     color:#ffffff;
-    font-size:3vw;
+    font-size:4vw;
     text-decoration: none;
 }
 ul {
@@ -216,82 +232,34 @@ ul {
     margin: 0;
     padding: 0;
 }
-
-.third{
-text-align: center;
-display:none;
-position: relative;
-}
-
 h3{
     color:#ffffff;
-    font-size: 4vw;
+    font-size: 7vw;
+    padding-bottom: 30%;
+    padding-top: 20%;
 }
-
-.totalbottom{
-    width:100%;
-    text-align: center;
+#verticalline{
+  padding-right: 30%;
 }
-
 .supersmall{
-    font-size: 2.5vw;
+    font-size: 3.6vw;
 }
-
 .company{
     margin-top:3%;
 }
-
 .Ours{
-    margin-top:-1%;
+    margin-top:-3%;
 }
-
 .fbheader{
     margin-bottom:1%;
 
 }
-
 .ymdlink{
     text-decoration: none;
     color:white;
 }
 
-#second{
-  text-align: center;
-  margin-top:-20%;
-  margin-left: 0%;
 }
-
-#third{
-  text-align: center;
-  margin-left: -1%;
-}
-
-#fifth{
-  text-align: center;
-  margin-left: -55%;
-}
-#second { order: 1; }
-#first{ order: 2;}
-#third{ order:3;}
-#fourth{ order: 5;}
-#fifth{ order: 4;}
-
-.horl{
-  display: block;
-}
-hr {
-  border-top: 1px solid red;
-}
-.lqlq{
-  display: block;
-}
-}
-
-
-
-
-
-
 @media  (min-width: 376px) and (max-width: 600px){
   label{
     margin-top:-6%;
@@ -337,39 +305,33 @@ mat-toolbar{
   #toggle:checked + mat-toolbar{
     display: inline-flex;
   }
-
+  /*footer*/
   #facebook{
-    width:6%;
-    text-align: center;
-    margin-left:35%;
+    width:50%;
 
 }
 .footer{
-
     width: 100%;
-    height: 100%;
     background-color:#0c2461;
-    display: flex;
-    flex-direction: column;
-
 }
+.footerfirstsection{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 2.5%;
+  padding-bottom: 10%;
+ }
 .botsections{
   margin-top:0%;
 }
-
-  .first{
-    text-align: center;
-
-}
-
 p{
     color:#ffffff;
-    font-size:3vw;
+    font-size:4.4vw;
 }
-
 .menu{
     color:#ffffff;
-    font-size:3vw;
+    font-size:4.4vw;
     text-decoration: none;
 }
 ul {
@@ -377,82 +339,33 @@ ul {
     margin: 0;
     padding: 0;
 }
-
-.third{
-text-align: center;
-display:none;
-position: relative;
-}
-
 h3{
     color:#ffffff;
-    font-size: 4vw;
+    font-size: 7vw;
+    padding-bottom: 30%;
+    padding-top: 20%;
 }
-
-.totalbottom{
-    width:100%;
-    text-align: center;
+#verticalline{
+  padding-right: 30%;
 }
-
 .supersmall{
-    font-size: 2.5vw;
+    font-size: 3.6vw;
 }
-
 .company{
     margin-top:3%;
 }
-
 .Ours{
-    margin-top:-1%;
+    margin-top:-3%;
 }
-
 .fbheader{
     margin-bottom:1%;
 
 }
-
 .ymdlink{
     text-decoration: none;
     color:white;
 }
-
-#second{
-  text-align: center;
-  margin-top:-20%;
-  margin-left: 0%;
 }
-
-#third{
-  text-align: center;
-  margin-left: -1%;
-}
-
-#fifth{
-  text-align: center;
-  margin-left: -45%;
-}
-#second { order: 1; }
-#first{ order: 2;}
-#third{ order:3;}
-#fourth{ order: 5;}
-#fifth{ order: 4;}
-
-.horl{
-  display: block;
-}
-hr {
-  border-top: 1px solid red;
-}
-.lqlq{
-  display: block;
-}
-}
-
-
-
-
-
-
 @media  (min-width: 600px) and (max-width: 1023px){
   label{
     margin-top:-9%;
@@ -472,7 +385,7 @@ hr {
   #toggle{
     margin-top: -5%;
     display:block;
-    
+
     text-align: center;
     margin-bottom: -5%;
 
@@ -505,127 +418,72 @@ mat-toolbar{
     display: inline-flex;
   }
 
+  /*footer*/
   #facebook{
-    width:9%;
-    text-align: center;
-    margin-left:35%;
-    margin-top:4%;
+    width:44%;
 
 }
 .footer{
-
+    width: 100%;
+    background-color:#0c2461;
+}
+.footerfirstsection{
   width: 100%;
-  background-color:#0c2461;
   display: flex;
   flex-direction: column;
-  height:100%;
-
-}
-.botsections{
-margin-top:1%;
-text-align: center;
-}
-
-.first{
   text-align: center;
-
+  padding-top: 2.5%;
+  padding-bottom: 5%;
+ }
+.botsections{
+  margin-top:0%;
 }
-
 p{
-  color:#ffffff;
-  font-size:3vw;
+    color:#ffffff;
+    font-size:4vw;
 }
-
 .menu{
-  color:#ffffff;
-  font-size:3vw;
-  text-decoration: none;
+    color:#ffffff;
+    font-size:4vw;
+    text-decoration: none;
 }
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-
-.third{
-text-align: center;
-display:none;
-position: relative;
-}
-
 h3{
-  color:#ffffff;
-  font-size: 4vw;
+    color:#ffffff;
+    font-size: 7vw;
+    padding-bottom: 40%;
+    padding-top: 30%;
 }
-
-.totalbottom{
-  width:100%;
-  text-align: center;
+#verticalline{
+  padding-right: 30%;
 }
-
 .supersmall{
-  font-size: 2.5vw;
+    font-size: 3.6vw;
 }
-
 .company{
-  margin-top:3%;
+    padding-top:4%;
 }
-
 .Ours{
-  margin-top:-1%;
+    margin-top:1%;
+    padding-bottom: 3%;
 }
-
 .fbheader{
-  margin-bottom:1%;
+    margin-bottom:1%;
 
 }
-
 .ymdlink{
-  text-decoration: none;
-  color:white;
+    text-decoration: none;
+    color:white;
 }
-
-#second{
-text-align: center;
-
-margin-left: 0%;
-}
-
-#third{
-text-align: center;
-margin-left: -1%;
-}
-
-#fifth{
-text-align: center;
-}
-#second { order: 1; margin-top:0; }
-#first{ order: 2;
-  margin-top:7%;}
-#third{ order:3;margin-top:7%;}
-#fourth{ order: 5;margin-top:7%;}
-#fifth{ order: 4;margin-top:7%;margin-right:28%;}
-
-.horl{
-display: block;
-}
-hr {
-border-top: 1px solid red;
-}
-.lqlq{
-display: block;
-text-align: center;
-}
-li{
-  margin-top:5%;
+.footericons{
+  font-size: 50px;
+  padding-right: 8%;
 }
 }
-
-
-
-
-
-
 @media  (min-width: 1023px) and (max-width: 1250px){
   label{
     margin-top:-10%;
@@ -645,7 +503,7 @@ li{
   #toggle{
     margin-top: -5%;
     display:block;
-    
+
     text-align: center;
     margin-bottom: -5%;
 
@@ -679,118 +537,71 @@ mat-toolbar{
     display: inline-flex;
   }
 
+  /*footer*/
   #facebook{
-    width:9%;
-    text-align: center;
-    margin-left:35%;
-    margin-top:4%;
+    width:44%;
 
 }
 .footer{
-
+    width: 100%;
+    background-color:#0c2461;
+}
+.footerfirstsection{
   width: 100%;
-  background-color:#0c2461;
   display: flex;
   flex-direction: column;
-  height:100%;
-
-}
-.botsections{
-margin-top:1%;
-text-align: center;
-}
-
-.first{
   text-align: center;
-
+  padding-top: 2.5%;
+  padding-bottom: 5%;
+ }
+.botsections{
+  margin-top:0%;
 }
-
 p{
-  color:#ffffff;
-  font-size:3vw;
+    color:#ffffff;
+    font-size:4vw;
+    padding-bottom: 10%;
 }
-
 .menu{
-  color:#ffffff;
-  font-size:3vw;
-  text-decoration: none;
+    color:#ffffff;
+    font-size:4vw;
+    text-decoration: none;
 }
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-
-.third{
-text-align: center;
-display:none;
-position: relative;
-}
-
 h3{
-  color:#ffffff;
-  font-size: 4vw;
+    color:#ffffff;
+    font-size: 7vw;
+    padding-bottom: 40%;
+    padding-top: 40%;
 }
-
-.totalbottom{
-  width:100%;
-  text-align: center;
+#verticalline{
+  padding-right: 30%;
 }
-
 .supersmall{
-  font-size: 2.5vw;
+    font-size: 3.6vw;
 }
-
 .company{
-  margin-top:3%;
+    padding-top:4%;
+    padding-bottom: 0;
 }
-
 .Ours{
-  margin-top:-1%;
+    padding-top: 4%;
+    padding-bottom: 3%;
 }
-
 .fbheader{
-  margin-bottom:1%;
+    margin-bottom:1%;
 
 }
-
 .ymdlink{
-  text-decoration: none;
-  color:white;
+    text-decoration: none;
+    color:white;
 }
-
-#second{
-text-align: center;
-
-margin-left: 0%;
-}
-
-#third{
-text-align: center;
-margin-left: -1%;
-}
-
-#fifth{
-text-align: center;
-}
-#second { order: 1; margin-top:0; }
-#first{ order: 2;
-  margin-top:7%;}
-#third{ order:3;margin-top:7%;}
-#fourth{ order: 5;margin-top:7%;}
-#fifth{ order: 4;margin-top:7%;margin-right:24%;}
-
-.horl{
-display: block;
-}
-hr {
-border-top: 1px solid red;
-}
-.lqlq{
-display: block;
-text-align: center;
-}
-li{
-  margin-top:5%;
+.footericons{
+  font-size: 80px;
+  padding-right: 12%;
 }
 }

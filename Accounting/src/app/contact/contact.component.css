@@ -15,6 +15,7 @@
     padding-bottom:2%;
     padding-top:2%;
     font-weight: bold;
+    text-align: center;
 }
 .mapouter{
   position:relative;
@@ -181,11 +182,11 @@ hr{
     height:auto;
 }
 .contactlinetext{
-  font-size: 4vw;
+  font-size: 6vw;
   text-align: center;
   color:#ffffff;
-  padding-bottom:2%;
-  padding-top:2%;
+  padding-bottom:4%;
+  padding-top:4%;
   font-weight: bold;
 }
 .contactline{
@@ -333,11 +334,11 @@ padding-top: -2%;
 }
 /*map and info*/
 .contactlinetext{
-  font-size: 4vw;
+  font-size: 6vw;
   text-align: center;
   color:#ffffff;
-  padding-bottom:2%;
-  padding-top:2%;
+  padding-bottom:4%;
+  padding-top:4%;
   font-weight: bold;
 }
 .contactline{
@@ -478,11 +479,11 @@ padding-top: -2%;
 }
 /*map and info*/
 .contactlinetext{
-  font-size: 4vw;
+  font-size: 5.7vw;
   text-align: center;
   color:#ffffff;
   padding-bottom:4%;
-  padding-top:2%;
+  padding-top:3%;
   font-weight: bold;
 }
 .contactline{
@@ -579,8 +580,8 @@ padding-top: -2%;
 .example-full-width {
   width: 100%;
   font-size: 3vw;
-  
-  
+
+
 }
 .input{
   font-size: 3vw;
@@ -726,8 +727,8 @@ padding-top: -2%;
   width: 140%;
   font-size: 3vw;
   margin-left:13%;
-  
-  
+
+
 }
 .input{
   font-size: 3vw;

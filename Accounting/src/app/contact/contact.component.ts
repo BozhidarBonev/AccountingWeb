@@ -1,12 +1,17 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import {FormControl, Validators, NgForm} from '@angular/forms';
+import { Component, OnInit, ViewChild, OnDestroy } from '@angular/core';
+import {FormControl, Validators, NgForm, FormGroup, FormBuilder} from '@angular/forms';
 import {faMapMarkedAlt} from '@fortawesome/free-solid-svg-icons';
 import {faPhoneSquare} from '@fortawesome/free-solid-svg-icons';
 import {faEnvelopeOpenText} from '@fortawesome/free-solid-svg-icons';
 import {faCalendarAlt} from '@fortawesome/free-solid-svg-icons';
 import { User } from './user';
 import {EnrollementService} from '../enrollement.service';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { Subject } from 'rxjs';
+import { AngularFireDatabase } from  'angularfire2/database';
+import  { Observable } from  'rxjs';
+
+
 
 @Component({
   selector: 'app-contact',
@@ -14,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  @ViewChild('f', {static: false})  public signupForm: NgForm;
+
+
   faEnvelopeOpenText = faEnvelopeOpenText;
   faCalendarAlt = faCalendarAlt;
   faMapMarkedAlt = faMapMarkedAlt;
@@ -22,33 +28,56 @@ export class ContactComponent implements OnInit {
   submitted = false;
   errorMsg = '';
   showMsg = false;
-
-  email = new FormControl('', [Validators.required, Validators.email]);
-  name = new FormControl('', [Validators.required]);
-userModel = new User('' , '' , '' , '' );
+  itemName = '';
+  itemEmail = '';
+  itemPhone = '';
+  itemMessage = '';
+  items: Observable<any[]>;
+  contactForm: FormGroup;
+  contactFormEmail = new FormControl('', [Validators.required, Validators.email]);
+  contactFormName = new FormControl('', [Validators.required]);
+  contactFormMessage= new FormControl('', [Validators.required]);
+  userModel = new User('' , '' , '' , '' );
+    http: any;
 
   getErrorMessage() {
-    return this.email.hasError('required') ? 'You must enter a value' :
-        this.email.hasError('email') ? 'Not a valid email' :
+    return this.contactFormEmail.hasError('required') ? 'You must enter a value' :
+        this.contactFormEmail.hasError('email') ? 'Not a valid email' :
             '';
   }
-  constructor(private _enrollementService: EnrollementService){}
 
-  ngOnInit() {
+  emailstring= "mailto:dimulskiatanas@gmail.com?Subject=Hello&body=links";
+
+
+    constructor(private fb: FormBuilder, private _enrollementService: EnrollementService, private db: AngularFireDatabase) {
+      this.items = db.list('emails').valueChanges()
+
+      this.contactForm = fb.group({
+      contactFormName: ['', Validators.required],
+      contactFormEmail: ['', [Validators.required, Validators.email]],
+      contactFormPhone: ['', Validators.required],
+      contactFormMessage: ['', Validators.required]
+        });
+     }
+
+  ngOnInit(): void {
+
   }
-  onSubmit() {
 
-    this._enrollementService.enroll(this.userModel)
-    .subscribe(
-      data => console.log('Succes', data),
-      error => console.error('Error!', error)
-    );
-    this.showMsg = true;
-    console.log(this.signupForm.value);
-    this.signupForm.resetForm();
+  onSubmit()  {
+    this.db.list('/emails').push({ name: this.itemName, email: this.itemEmail, phone: this.itemPhone,
+       message: this.itemMessage});
 
+      alert('Thank you for contacting us, your message has gone through!')
+      // tslint:disable-next-line: align
+
+   }
+
+
+clearForm() {
+   this.contactForm.reset();
+ }
 
   }
 
 
-}

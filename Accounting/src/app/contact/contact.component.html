@@ -12,7 +12,7 @@
                 <p class="div31" ><fa-icon class="div311" [icon]="faMapMarkedAlt"></fa-icon>  Адрес:</p>
                 <p class="div44">Кей Пи Ай Консулт ЕООД ул. "Драгшан 5" гр. София</p>
                 <p  class="div31"><fa-icon class="div311" [icon]="faPhoneSquare"></fa-icon> Телефон:<p>
-                <p class="div44">0899844940</p>
+                <p class="div44"><a style="text-decoration: none; color:#0c2461;"href="tel:+359899844940">0899844940</a></p>
                 <p  class="div31"><fa-icon class="div311" [icon]="faEnvelopeOpenText"></fa-icon>    Мейл:</p>
                 <p class="div44">k.p.i.consult@abv.bg</p>
                 <p class="div31"><fa-icon class="div311" [icon]="faCalendarAlt"></fa-icon> Работно Време:</p>
@@ -31,55 +31,46 @@
     <div class="divvv">
 
 
-      <form class="example-form" #f='ngForm'  (ngSubmit)="onSubmit()" >
+      <form class="example-form" #f='ngForm' [formGroup]="contactForm" novalidate   >
 
 
           <mat-form-field class="example-full-width">
             <input class="input" matInput placeholder="Име"
+            name="itemName"
+            [(ngModel)]="itemName"
             ngModel
-            name="username"
             required
-            [(ngModel)]="userModel.name"
-            #name="ngModel">
-            <mat-error *ngIf="name.invalid && name.touched">Моля въведете валидно име</mat-error>
+            id="contactFormName"
+            formControlName="contactFormName"
+           >
+            <mat-error *ngIf="contactFormName.invalid && contactFormName.touched">Моля въведете валидно име</mat-error>
 
           </mat-form-field>
 
           <mat-form-field class="example-full-width"  >
               <input class="input" matInput placeholder="Мейл"
-              [(ngModel)]="userModel.email"
+
               type="email"
 
               ngModel
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+
               required
-              name="email"
-             #email="ngModel">
-              <mat-error *ngIf="!email?.pattern && email.touched">Моля въведете валиден мейл адрес</mat-error>
+               id="contactFormEmail" formControlName="contactFormEmail" [(ngModel)]="itemEmail">
+              <mat-error *ngIf=" contactFormEmail.touched">Моля въведете валиден мейл адрес</mat-error>
             </mat-form-field>
             <mat-form-field class="example-full-width">
                 <input class="input" matInput placeholder="Телефон"
-                name="phone"
-                [(ngModel)]="userModel.phone"  >
+                id="contactFormPhone" formControlName="contactFormPhone" [(ngModel)]="itemPhone" >
               </mat-form-field>
           <mat-form-field class="example-full-width">
             <textarea class="input" matInput placeholder="Съобщение"
-            name="message"
-            [(ngModel)]="userModel.message"
-            ngModel
+             ngModel
             required
-            #message="ngModel"></textarea>
-            <mat-error *ngIf="message.invalid && message.touched">Моля въведете валидно  съобщение</mat-error>
+             id="contactFormMessage" formControlName="contactFormMessage" [(ngModel)]="itemMessage"></textarea>
+            <mat-error *ngIf="contactFormMessage.invalid && contactFormMessage.touched">Моля въведете валидно  съобщение</mat-error>
           </mat-form-field>
-          <div class="row row1"  *ngIf="showMsg">
-            <div class="res">
-              <p class="alert alert-success text">
-                  <strong class="strongtext1">Вашето съобщение беше изпратено успешно!</strong>
 
-              </p>
-            </div>
-          </div>
-          <button [disabled]="f.invalid "class="button1" type="submit" >Изпрати</button>
+          <button class="button1" type="submit" [disabled]="!f.valid" (click)=onSubmit() (click)=clearForm()>Изпрати</button>
         </form>
       </div>
 

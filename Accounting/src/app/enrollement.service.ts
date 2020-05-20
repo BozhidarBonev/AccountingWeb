@@ -8,7 +8,7 @@ import {User} from './contact/user';
 })
 export class EnrollementService {
 
-  _url = 'http://localhost:3000/enroll';
+  _url = '';
   constructor(private _http: HttpClient) { }
   enroll(user: User) {
     return this._http.post<any>(this._url, user);

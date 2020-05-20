@@ -28,22 +28,18 @@ app.post('/enroll', function(req,res){
     `;
 
     let transporter = nodemailer.createTransport({
-        service: 'angserveretest@gmail.com',
-        port: 587,
-        secure: false, // true for 465, false for other ports
+        host: 'mail.kpiconsultbg.com',
+        
         auth: {
-            user: 'angserveretest@gmail.com', // generated ethereal user
-            pass: 'testemail' // generated ethereal password
-        },
-        tls:{
-            rejectUnauthorized:false
+            user: 'ymdeindhoven@gmail.com',
+            pass: 'Marconilaan_81',
         }
     });
 
     // send mail with defined transport object
     let mailOptions={
         from: '${req.body.email}', // sender address
-        to: 'hasancho31@abv.bg', // list of receivers
+        to: 'dimulskiatanas@gmail.com', // list of receivers
         subject: 'Hello ✔', // Subject line
         text: 'Hello world?', // plain text body
         html: output // html body

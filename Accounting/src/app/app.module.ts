@@ -24,8 +24,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import {  MatSidenavModule, MatListModule } from '@angular/material';
 import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
+//import { SnotifyModule, SnotifyService, ToastDefaults } from 'ng-snotify';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
-
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -54,11 +57,15 @@ import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
     MatButtonModule,
     MatIconModule,
     MatSidenavModule,
-     MatListModule
+     MatListModule,
+     AngularFireModule.initializeApp(environment.firebase, 'letslearn-dev'),
+     AngularFireDatabaseModule,
+
 
   ],
   providers: [{provide: LocationStrategy,
-    useClass:HashLocationStrategy}],
+    useClass: HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
